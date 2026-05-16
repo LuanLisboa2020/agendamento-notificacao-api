@@ -9,7 +9,6 @@ public class AgendamentoNotificacaoApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AgendamentoNotificacaoApiApplication.class, args);
 
-		System.out.println("ola mundo");
 	}
 
 }
