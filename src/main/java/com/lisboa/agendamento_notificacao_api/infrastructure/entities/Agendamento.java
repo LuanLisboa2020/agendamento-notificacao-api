@@ -31,12 +31,12 @@ public class Agendamento {
     private LocalDateTime dataHoraAgendamento;
     private LocalDateTime dataHoraModificacao;
     private String mensagem;
-    private StatusNotificacaoEnum statusNotificacao;
+    private StatusNotificacaoEnum statusNotificacaoEnum;
 
     @PrePersist
     private void PrePersist(){
         dataHoraAgendamento = LocalDateTime.now();
-        statusNotificacao = StatusNotificacaoEnum.AGENDADO;
+        statusNotificacaoEnum = StatusNotificacaoEnum.AGENDADO;
     }
     
 }
