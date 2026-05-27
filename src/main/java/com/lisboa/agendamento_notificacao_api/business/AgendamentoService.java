@@ -23,9 +23,13 @@ public class AgendamentoService {
     private final IAgendamentoMapper agendamentoMapper;
 
     public AgendamentoRecordOut gravarAgendamento(AgendamentoRecord agendamento){
+
+        Agendamento entity = agendamentoMapper.paraEntity(agendamento);
+
+        entity.setDataHoraEnvio(LocalDateTime.now());
+
         return agendamentoMapper.paraOut(
-            repository.save(
-                agendamentoMapper.paraEntity(agendamento)));
+            repository.save(entity));
     }
 
     public AgendamentoRecordOut buscarAgendamentosPorId (Long id) {

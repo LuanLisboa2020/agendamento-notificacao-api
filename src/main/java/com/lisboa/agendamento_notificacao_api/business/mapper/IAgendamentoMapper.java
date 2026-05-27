@@ -1,6 +1,7 @@
 package com.lisboa.agendamento_notificacao_api.business.mapper;
 
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import com.lisboa.agendamento_notificacao_api.controller.dto.in.AgendamentoRecord;
 import com.lisboa.agendamento_notificacao_api.controller.dto.out.AgendamentoRecordOut;
