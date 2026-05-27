@@ -1,4 +1,4 @@
-package com.lisboa.agendamento_notificacao_api.business;
+package com.lisboa.agendamento_notificacao_api.business.mapper;
 
 import org.mapstruct.Mapper;
 
